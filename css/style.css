@@ -1,0 +1,144 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+  font-size: 1rem;
+  line-height: 48px;
+}
+
+.brand-logo img {
+  margin: 6px;
+}
+
+a {
+  color: #68c2ee;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 330px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+.parallax-container.small {
+  min-height: 250px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+@media only screen and (min-width : 601px) {
+  .navbar-fixed {
+    height: 48px;
+  }
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 48px;
+    line-height: 48px;
+  }
+}
+
+table td {
+  padding: 5px;
+}
+
+table td p {
+  margin: 0px;
+}
+
+table td div.chip {
+  margin-bottom: 0px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.footer-copyright {
+  font-size: 75%;
+}
+
+h1.teal-text.text-lighten-2 {
+  color: #f0fbff !important;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.73);
+}
+
+h1.header {
+  margin-bottom: 0;
+}
+
+h5.overimg {
+  color: white;
+  font-weight: 400 !important;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.78);
+}
+
+div.card {
+  border-radius: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.15), 0px 0px 15px 5px rgba(0, 0, 0, 0.15)
+}
+
+div.card .card-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.35)
+}
+
+.hovergo {
+  margin: 0;
+  transition: text-shadow 0.25s;
+  color: black;
+}
+
+.parallax-container .hovergo {
+  margin: 0;
+  transition: text-shadow 0.25s;
+  color: white;
+}
+
+.hovergo:hover {
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6)
+}
+
+.parallax-container .hovergo:hover {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8)
+}
+
+.tight p {
+  margin: 0;
+}
