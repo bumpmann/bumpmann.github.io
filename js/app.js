@@ -1,12 +1,12 @@
-const myAppControllers = angular.module('myAppControllers', []);
+var myAppControllers = angular.module('myAppControllers', []);
 
-const $ = require('./jquery')
+var $ = require('./jquery')
 require('./ctrl/home')(myAppControllers)
 require('./ctrl/parcours')(myAppControllers)
 require('./ctrl/realisations')(myAppControllers)
 require('./ctrl/contact')(myAppControllers)
 
-const myApp = angular.module('MyApp', [
+angular.module('MyApp', [
   require('angular-route'),
   "myAppControllers"
 ])
@@ -35,5 +35,7 @@ const myApp = angular.module('MyApp', [
 })
 .run(function() {
     $('.button-collapse').sideNav();
-    console.log("MyApp is ready")
+    $('.side-nav a').click(function() {
+      $('.button-collapse').sideNav('hide');
+    })
 })
