@@ -9,6 +9,7 @@ mkdir -p ./dist/node_modules/materialize-css/dist/fonts/roboto
 mkdir -p ./dist/node_modules/angular
 
 cp -R css img partials favicon.png index.html CV.pdf ./dist/
+rm -f ./dist/img/_* ./dist/img/*.psd
 cp ./node_modules/materialize-css/dist/css/materialize.css ./dist/node_modules/materialize-css/dist/css/
 cp ./node_modules/materialize-css/dist/js/materialize.min.js ./dist/node_modules/materialize-css/dist/js/
 cp ./node_modules/materialize-css/dist/fonts/roboto/Roboto-*.woff2 ./dist/node_modules/materialize-css/dist/fonts/roboto/
