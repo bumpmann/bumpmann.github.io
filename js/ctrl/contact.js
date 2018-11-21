@@ -2,7 +2,6 @@ var $ = require('../jquery')
 
 module.exports = function(controllers) {
     controllers.controller('contactCtrl', function($scope) {
-        $scope.sen
         $('.parallax').parallax();
         /*$('#contact-form').submit(function() {
             $.ajax({
@@ -18,7 +17,6 @@ module.exports = function(controllers) {
                 async: false,
                 //contentType: 'application/json; charset=utf-8',
                 success: function(msg) {
-                    alert(msg);
                 }
             })
         })*/
